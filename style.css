@@ -1,0 +1,194 @@
+*
+{
+    /* cursor: none; */
+}
+
+.row
+{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}
+
+.item
+{
+    width: 25%;
+    margin-left: 30px;
+    text-align: center;
+    /* background-color: aqua; */
+}
+.item img 
+{
+    background-size: cover;
+    /* cursor: pointer; */
+}
+.item h2
+{
+color: rgb(18, 2, 168);
+/* text-align: left; */
+
+}
+.item p 
+{
+    color: rgb(51, 46, 94);
+    width: 100%;
+    line-height: 1.8;
+  /* text-align: left; */
+}
+.box
+{
+    width: 100%;
+    height: 2000px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom:0 ;
+    background-color: rgba(0, 0,0, .55);
+    transform: scale(0,0);
+    -webkit-transform: scale(0,0);
+    -moz-transform: scale(0,0);
+    -ms-transform: scale(0,0);
+    -o-transform: scale(0,0);
+    transition: all .5s ease-out;
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+    -ms-transition: all .5s ease-out;
+    -o-transition: all .5s ease-out;
+}
+.box div 
+{
+    width: 400px;
+    height: 400px;
+    margin-top: 10%;
+    background-image: url(popular1.png);
+    background-size: cover;
+    background-color: rosybrown;
+    position: relative;
+}
+a
+{
+    font-size: 40px;
+    color: white;
+    position: fixed;
+    right: 100px;
+    top: 40px;
+
+}
+/* .box div img 
+{
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+} */
+#right
+{
+    position: absolute;
+    top: 45%;
+    right: 10px;
+    font-size: 30px;
+}
+#left
+{
+    position: absolute;
+    top: 45%;
+    left: 10px;
+    font-size: 30px;
+}
+@media (Max-WIDTH:500PX)
+{
+    .row
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .item
+{
+    width: 100%;
+    margin-left: 0px;
+    text-align: center;
+    /* background-color: aqua; */
+    /* background-color: yellow; */
+}
+
+.item img 
+{
+    background-size: cover;
+    cursor: pointer;
+    width: 250px;
+    height: 250px;
+} .item h2
+{
+color: rgb(18, 2, 168);
+width: 100%;
+/* text-align: left; */
+
+}
+.item p 
+{
+    color: rgb(51, 46, 94);
+    width: 80%;
+    line-height: 1.8;
+  text-align: left;
+  margin-left: 80px;
+}
+.box
+{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    position: fixed;
+    top: 0px;
+    right: 0;
+    left: 0; 
+     bottom:0 ;
+    background-color: rgba(0, 0,0, .55);
+    /* transform: scale(0,0);
+    -webkit-transform: scale(0,0);
+    -moz-transform: scale(0,0);
+    -ms-transform: scale(0,0);
+    -o-transform: scale(0,0); */
+   
+    /* justify-content: space-between; */
+}
+.box div 
+{
+    width: 300px;
+    height: 350px;
+    margin-top: 20%;
+    background-image: url(popular1.png);
+    background-size: cover;
+    background-color: rosybrown;
+
+}
+a
+{
+    font-size: 30px;
+    color: white;
+    position: fixed;
+    right: 25px;
+    top: 20px;
+
+}
+}
+#mouse
+{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: none;
+}
